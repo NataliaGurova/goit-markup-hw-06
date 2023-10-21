@@ -22,13 +22,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
+ 
     <header class="header">
       <div class="container container-header">
-        <nav class="header-nav">
+        
           <a class="header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
+          <button class="group-menu-btn" type="button" data-menu-open>
+            <svg class="group-menu-icons" width="16.8" height="14.4">
+            <use href="./images/icons.svg#icon-group-menu"></use></svg>
+          </button>
+
+        <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -56,19 +62,20 @@
           </ul>
         </address>
       </div>
+
     </header>
 
     <main>
       <!-- Секція 1 з button -->
       <section class="section-top">
-        <div class="container container-top">
+        <div class="container-top">
           <h1 class="top-title">Effective Solutions for Your Business</h1>
           <button class="top-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
       <!-- Секція 2 з описом -->
-      <section class="section-strategy">
+      <section class="section section-strategy">
         <div class="container container-strategy">
           <h2 class="strategy-title visually-hidden">Advantages</h2>
           <ul class="strategy-list">
@@ -125,11 +132,11 @@
       </section>
 
       <!-- Секція 3 з фото -->
-      <section class="section-team">
+      <section class="section section-team">
         <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
-            <!-- Team Card 1 -->
+            
             <li class="team-item">
               <img
                 class="team-item-img"
@@ -189,7 +196,7 @@
                   </ul>
               </div>
             </li>
-            <!-- Team Card 2 -->
+          
             <li class="team-item">
               <img
                 class="team-item-img"
@@ -257,7 +264,7 @@
                   </ul>
               </div>
             </li>
-            <!-- Team Card 3 -->
+        
             <li class="team-item">
               <img
                 class="team-item-img"
@@ -325,7 +332,7 @@
                   </ul>
               </div>
             </li>
-            <!-- Team Card 4 -->
+          
             <li class="team-item">
               <img
                 class="team-item-img"
@@ -398,7 +405,8 @@
       </section>
 
       <!-- Секція 4 з фото2 -->
-      <section class="section-photo">
+
+      <section class="section section-photo">
         <div class="container container-photo">
           <h2 class="photo-title">Our Portfolio</h2>
           <ul class="photo-list">
@@ -521,7 +529,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+  <footer class="footer"> 
       <div class="container container-footer">
         <div class="container-footer-logo">
           <a class="footer-logo" href="./index.html"
@@ -657,8 +665,96 @@
       
       </div>  
     </div>
+ 
+
+  <!--   Menu------------ -->
+
+  <div class="backdrop-menu" data-menu>
+      <div class="menu">
+
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg class="close-icons" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use></svg>
+        </button>
+
+        <div class="menu-text">
+          <ul class="menu-nav-list">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <address class="menu-address">
+          <ul class="menu-address-list">
+            <li class="menu-address-item">
+              <a class="menu-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-item">
+              <a class="menu-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="container-soc-menu">
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a
+                href="https://www.instagram/com"
+                target="_blank"
+                class="menu-link"
+              >
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="menu-link"
+              >
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="menu-link"
+              >
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="menu-link"
+              >
+                <svg class="menu-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div> 
+
+
     
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
   </body>
 </html>
