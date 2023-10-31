@@ -133,10 +133,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
-
-  width: 24px;
-  height: 24px;
+  padding: 16px 0;
   border: transparent;
   background-color: transparent;
 
@@ -172,7 +169,7 @@ address {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: 121px;
+  margin-right: auto;
 }
 
 
@@ -298,7 +295,7 @@ text-align: center;
   background-color: #2e2f42;
   margin: 0 auto;
   max-width: 320px;
-  padding: 72px 75px;
+  padding: 72px 0;/*не обмежувати*/
 
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -310,6 +307,7 @@ text-align: center;
   background-position: center;
   background-size: cover;
 }
+
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -324,6 +322,7 @@ text-align: center;
 }
 
 .top-title {
+  max-width: 200px;
   margin: 0 auto;
   margin-bottom: 72px;
   color: #fff;
@@ -1369,6 +1368,7 @@ transform: translateY(0);
   opacity: 0; 
   visibility: hidden;
   pointer-events: none;
+  overflow-y: auto; /*skroll*/
 }
 
 
@@ -1380,19 +1380,17 @@ transform: translateY(0);
 /*=========O=============*/
 
 .menu {
+  display: flex;
+  flex-direction: column;
   background-color: #FFF;
   padding: 72px 24px 40px 16px;
   width: 320px;
-  min-height: 640px;
- 
-  background-color:transparent;
+  height: 100%;
+  margin: 0 auto;
+  background-color: transparent;
   
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 
@@ -1427,11 +1425,20 @@ transform: translateY(0);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.menu-text {
+  margin-bottom: auto;
+}
+
 .menu-nav-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
+  /* margin-bottom: 168px; */
+}
+
+.menu-nav-item:nth-child(1) {
+  color: #404BBF;
 }
 
 .menu-nav-link {
@@ -1450,11 +1457,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #404BBF;
 }
 
+.menu-address {
+  margin-bottom: 48px;
+}
+
 .menu-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
+
 }
 
 .menu-address-link {
